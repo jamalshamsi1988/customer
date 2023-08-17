@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link"
 
 const Layout = ({children}) => {
   return (
     <>
     <header className="header">
-        <h2>Management CRM</h2>
+    <h2>Management CRM</h2>
         <Link href='/add-customer'>Add Customer</Link>
     </header>
     <div className="main">{children}</div>
@@ -14,7 +14,7 @@ const Layout = ({children}) => {
     </footer>
       
     </>
-  );
+  )
 }
 
-export default Layout;
+export default Layout
