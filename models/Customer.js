@@ -1,38 +1,39 @@
 
-import {Schema , model , models} from 'mongoos';
+import {Schema , model , models} from 'mongoose';
+
 
 const customerSchema = new Schema({
     name : {
         type : String ,
         required : true ,
-        minLength : 3 ,
+        minLength : 1 ,
     },
     lastName :{
         type : String ,
         required : true ,
-        minLength : 3 ,
+        minLength : 1 ,
     },
     email : {
         type : String ,
         required : true ,
-        minLength : 3 ,
+        minLength : 1 ,
     },
     phone : String ,
     address : String,
-    postalCod : Number ,
+    postalCode : Number ,
     date : Date ,
-    product :{
+    products :{
         type :Array ,
         default :[]
     },
     createAt :{
         type : Date,
-        default :()=> Date.now,
+        default :()=> Date.now(),
         immutable : true
     },
     updateAt :{
-        type : date,
-        default : ()=> Date.now
+        type : Date,
+        default : ()=> Date.now()
     },
 });
 

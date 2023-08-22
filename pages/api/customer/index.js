@@ -9,7 +9,7 @@ export default async function handler(req,res){
 
     }catch(error){
         console.log(error)
-        res.status(500).json({status:"failed" , message :"Error in connection to DB"})
+        res.status(500).json({status:"failed" , message :"Error in connecting to DB"})
         return;
 
     }
