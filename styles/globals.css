@@ -117,7 +117,7 @@ h4 {
 }
 
 .item-list {
-  border: 2px solid #262836;
+  border: 2px solid #8af1aa;
   padding: 10px;
   margin: 50px 0;
   border-radius: 10px;
@@ -129,7 +129,7 @@ h4 {
 }
 
 .item-list button {
-  border: 1px solid #8af1aa;
+  border: 1px solid  #262836;
   color: #8af1aa;
   background-color: black;
   border-radius: 5px;
@@ -141,7 +141,7 @@ h4 {
 }
 
 .form-input__list {
-  border: 2px solid #262836;
+  border: 2px solid #40bdbd;
   padding: 10px;
   margin-top: 50px;
   border-radius: 10px;
