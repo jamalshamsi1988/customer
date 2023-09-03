@@ -1,9 +1,13 @@
 
+import Card from './../components/module/Card';
 
 const HomePage = ({customers}) => {
   return (
     <div>
-      <h1>Customer Management</h1>
+      
+      {
+        customers.map(customer => <Card key={customer._id} customer={customer} />)
+      }
     </div>
   )
 }

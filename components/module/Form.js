@@ -9,7 +9,7 @@ const Form = ({form , setForm}) => {
  }
   return (
     <div>
-      <FormInput name="name" label="Name" type="text" value={form.name} onChange={changeHandler} />
+      <FormInput name="name" label="Name"  type="text" value={form.name} onChange={changeHandler} />
       <FormInput name="lastName" label="Last Name" type="text" value={form.lastName} onChange={changeHandler} />
       <FormInput name="email" label="Email" type="text" value={form.email} onChange={changeHandler} />
       <FormInput name="phone" label="Phone" type="tel" value={form.phone} onChange={changeHandler} />

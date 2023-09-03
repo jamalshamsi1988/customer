@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Form from "../module/Form"
 import { useRouter } from "next/router";
+import Form from "../module/Form"
 
 
 const AddCustomerPage = () => {
@@ -21,7 +21,7 @@ const AddCustomerPage = () => {
     const res = await fetch("/api/customer" , {
       method : "POST",
       body : JSON.stringify({data : form}),
-      headers : {"Content-Type" : "application/json"}
+      headers : {'Content-type': 'application/json'}
     });
     const data = await res.json();
     console.log(data);

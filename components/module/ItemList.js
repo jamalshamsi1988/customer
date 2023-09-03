@@ -8,7 +8,8 @@ const ItemList = ({form , setForm}) => {
 
     const addHandler =()=>{
         setForm({
-            ...form , products:[...products ,{name : "" , price :"" , qty : ""}],
+            ...form ,
+             products:[...products ,{name : "" , price :"" , qty : ""}],
         })
             console.log(products);
     }
@@ -17,14 +18,14 @@ const ItemList = ({form , setForm}) => {
         const {name , value}=e.target;
         const newProducts = [...products];
         newProducts[index][name]=value;
-        setForm({...form , products :[newProducts]});
+        setForm({...form , products : newProducts});
 
     };
 
     const deleteHandler = (index)=>{
         const newProducts = [...products];
         newProducts.splice(index , 1);
-        setForm({...form , products :[newProducts]});
+        setForm({...form , products : newProducts});
     }
   return (
     <div className="item-list">
@@ -32,7 +33,7 @@ const ItemList = ({form , setForm}) => {
         {
             products.map((product,index) =>(
               <ProductItem  key={index}
-               product={product}
+                product={product}
                 changeHandler={(e)=> changeHandler(e,index)}
                 deleteHandler={()=>deleteHandler(index)} />
             ))
