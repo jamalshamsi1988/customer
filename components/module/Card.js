@@ -1,9 +1,16 @@
 import Link from "next/link"
+import { useRouter } from "next/router";
 
 const Card = ({customer}) => {
+  
+  const router = useRouter();
 
-    const deleteHandler=()=>{
-        
+    const deleteHandler= async () =>{
+
+      const res = await fetch(`/api/delete/${customer._id}` , {method : "DELETE"}); 
+      const data = await res.json();
+      
+      if(data.status === "DELETE") router.reload();
     }
 
   return (
