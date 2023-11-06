@@ -10,7 +10,7 @@ const Card = ({customer}) => {
       const res = await fetch(`/api/delete/${customer._id}` , {method : "DELETE"}); 
       const data = await res.json();
       
-      if(data.status === "DELETE") router.reload();
+      if(data.status === "success") router.reload();
     }
 
   return (

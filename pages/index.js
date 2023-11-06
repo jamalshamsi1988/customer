@@ -6,7 +6,7 @@ import HomePage from "../models/HomePage";
 
 
 function Index({customers}) {
-  console.log(customers);
+  // console.log(customers);
   return (
     <HomePage customers={customers} />
   )

@@ -30,7 +30,7 @@ const CustomerEditPage = ({data, id}) => {
       headers: {  'Content-type': 'application/json' },
     })
     const data = await res.json();
-    if(res.status === "success") router.push("/")
+    if(data.status === "success") router.push("/")
    }
 
 
