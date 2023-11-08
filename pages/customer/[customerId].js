@@ -7,7 +7,7 @@ const Index = () => {
     const [data , setData]=useState(null);
 
     const router=useRouter();
-    const {query :{Index} , isReady}=router;
+    const {query :{customerId} , isReady}=router;
     
     useEffect(()=>{
         if(isReady){
